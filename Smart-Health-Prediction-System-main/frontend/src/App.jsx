@@ -13,7 +13,7 @@ export default function App() {
       const storedToken = localStorage.getItem('token');
       if (storedToken) {
         try {
-          const response = await fetch('http://localhost:5000/api/auth/profile', {
+          const response = await fetch('https://api-smart-health-ai.onrender.com/api/auth/profile', {
             headers: {
               'Authorization': `Bearer ${storedToken}`
             }

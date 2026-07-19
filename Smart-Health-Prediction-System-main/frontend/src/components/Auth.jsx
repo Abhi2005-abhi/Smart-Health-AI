@@ -25,7 +25,7 @@ export default function Auth({ onLoginSuccess }) {
         setError('');
         setLoading(true);
 
-        const apiURL = 'http://localhost:5000/api/auth';
+        const apiURL = 'https://api-smart-health-ai.onrender.com/api/auth';
         const endpoint = isLogin ? `${apiURL}/login` : `${apiURL}/signup`;
 
         const payload = isLogin
